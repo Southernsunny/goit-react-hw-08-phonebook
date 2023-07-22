@@ -37,7 +37,7 @@ export const Input = styled.input`
     outline: 2px solid #c19651;
     outline-offset: 5px;
     background-color: #fff;
-    color: #c19651;
+    color: #554121;
   }
 `;
 
