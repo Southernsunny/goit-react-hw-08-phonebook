@@ -5,9 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import shortid from 'shortid';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 import { FormContact, Label, Input, BtnAdd } from './Form.styled';
-import { getVisibleContacts } from 'redux/selector';
-import { addContact } from 'redux/operations';
-import * as operations from 'redux/operations';
+import { getVisibleContacts } from 'redux/contacts/selector';
+import { addContact } from 'redux/contacts/operations';
+import * as operations from 'redux/contacts/operations';
 
 const Form = () => {
   const [name, setName] = useState('');

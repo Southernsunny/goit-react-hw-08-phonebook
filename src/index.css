@@ -33,4 +33,5 @@ ul {
 button {
   cursor: pointer;
   outline: none;
+  font-family: inherit;
 }

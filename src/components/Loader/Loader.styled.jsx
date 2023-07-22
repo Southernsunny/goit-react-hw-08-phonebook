@@ -16,29 +16,25 @@ export const LoaderIcon = styled.div`
   }
 
   & div:nth-of-type(1) {
-    background-color: #37507a;
-    box-shadow: #37507a 0px 0px 9px 1px;
+    background-color: #5677b1;
     transform: translate(-10px, -10px);
     animation-delay: -1s;
   }
 
   & div:nth-of-type(2) {
     background-color: #e46c39;
-    box-shadow: #e46c39 0px 0px 9px 1px;
     transform: translate(10px, -10px);
     animation-delay: -2s;
   }
 
   & div:nth-of-type(3) {
-    background-color: #364e4d;
-    box-shadow: #364e4d 0px 0px 9px 1px;
+    background-color: #407572;
     transform: translate(10px, 10px);
     animation-delay: -3s;
   }
 
   & div:nth-of-type(4) {
     background-color: #d1b579;
-    box-shadow: #d1b579 0px 0px 9px 1px;
     transform: translate(-10px, 10px);
     animation-delay: -4s;
   }

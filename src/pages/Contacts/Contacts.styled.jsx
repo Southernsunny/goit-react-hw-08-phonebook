@@ -8,6 +8,10 @@ export const Container = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   width: 500px;
-  margin: 75px auto;
+  margin: 100px auto;
   gap: 25px;
+  ${
+    '' /* outline: 1px solid #c19651;
+  outline-offset: 5px; */
+  }
 `;

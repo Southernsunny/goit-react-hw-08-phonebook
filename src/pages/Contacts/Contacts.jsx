@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
-import Form from '../Form';
-import ContactsList from '../ContactsList';
+import Form from 'components/Form';
+import ContactsList from 'components/ContactsList';
 import Filter from 'components/Filter';
-import { Container } from './App.styled';
-import { useDispatch, useSelector } from 'react-redux';
-import { getError, getIsLoading } from 'redux/selector';
-import { fetchContacts } from 'redux/operations';
 import Loader from 'components/Loader';
+import { Container } from './Contacts.styled';
+import { useDispatch, useSelector } from 'react-redux';
+import { getError, getIsLoading } from 'redux/contacts/selector';
+import { fetchContacts } from 'redux/contacts/operations';
 
-const App = () => {
+const Contacts = () => {
   const dispatch = useDispatch();
   const isLoading = useSelector(getIsLoading);
   const error = useSelector(getError);
@@ -29,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Contacts;
