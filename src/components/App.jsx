@@ -6,6 +6,8 @@ import { useAuth } from 'hooks';
 import { RestrictedRoute } from 'components/RestrictedRoute';
 import { PrivateRoute } from 'components/PrivateRoute';
 import Layout from 'components/Layout/Layout';
+import NotFound from 'pages/NotFound/NotFound';
+import { Refresh } from 'pages/Home/Home.styled';
 
 const HomePage = lazy(() => import('../pages/Home/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
@@ -21,7 +23,7 @@ const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <Refresh>Refreshing user...</Refresh>
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -39,6 +41,7 @@ const App = () => {
           element={<PrivateRoute redirectTo="/login" component={<ContactsPage />} />}
         />
       </Route>
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

@@ -20,7 +20,7 @@ const LoginForm = () => {
 
   return (
     <>
-      <Form autoComplete="off" onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit}>
         <Title>Welcome back!</Title>
         <Input type="email" name="email" placeholder="Email" required />
         <Input type="password" name="password" placeholder="Password" required />

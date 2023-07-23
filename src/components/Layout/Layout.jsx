@@ -5,7 +5,7 @@ import { Loader, LoaderStyled } from './Layout.styled';
 
 const Layout = () => {
   return (
-    <div>
+    <>
       <AppBar />
       <Suspense
         fallback={
@@ -16,7 +16,7 @@ const Layout = () => {
       >
         <Outlet />
       </Suspense>
-    </div>
+    </>
   );
 };
 

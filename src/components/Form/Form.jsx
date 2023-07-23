@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,7 +7,6 @@ import { AiOutlineUserAdd } from 'react-icons/ai';
 import { FormContact, Label, Input, BtnAdd } from './Form.styled';
 import { getVisibleContacts } from 'redux/contacts/selector';
 import { addContact } from 'redux/contacts/operations';
-import * as operations from 'redux/contacts/operations';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -15,10 +14,6 @@ const Form = () => {
 
   const contacts = useSelector(getVisibleContacts);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(operations.fetchContacts());
-  }, [dispatch]);
 
   const handleChange = ({ target }) => {
     const { name, value } = target;

@@ -24,7 +24,7 @@ export const Title = styled.h1`
 
 export const Text = styled.p`
   font-size: 18px;
-  line-height: 25px;
+  line-height: 28px;
   text-align: center;
 `;
 
@@ -150,10 +150,4 @@ export const Link = styled(NavLink)`
       text-shadow: 0 0 15px #fbfd7b8a;
     }
   }
-`;
-
-//Refresh
-export const Refresh = styled.p`
-  font-size: 18px;
-  margin: 15px;
 `;

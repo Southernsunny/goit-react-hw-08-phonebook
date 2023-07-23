@@ -5,8 +5,7 @@ const Home = () => {
     <Container>
       <Title>Hello, everynyan!</Title>
       <Text>
-        Welcome to the Phonebook, where you can keep all your important contacts in one place –
-        friends, family, and even your padre!
+        Welcome to the Phonebook, where you can keep all your important contacts in one place!
       </Text>
 
       <Link to="/login">

@@ -19,7 +19,7 @@ const RegisterForm = () => {
     form.reset();
   };
   return (
-    <Form onSubmit={handleSubmit} autoComplete="off">
+    <Form onSubmit={handleSubmit}>
       <Title>Create your own account :</Title>
       <Input type="text" name="name" placeholder="Username" required />
       <Input type="email" name="email" placeholder="Email" required />
